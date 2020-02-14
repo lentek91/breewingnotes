@@ -13,10 +13,10 @@ private Grid<Batch> grid = new Grid<>();
   }
 
   private void initializeGrid() {
-    grid.addColumn(Batch::getId);
-    grid.addColumn(Batch::getName);
-    grid.addColumn(Batch::getStyleId);
-    grid.addColumn(Batch::getCreationDateTime);
+    grid.addColumn(Batch::getId).setHeader("Numer warki");
+    grid.addColumn(Batch::getName).setHeader("Nazwa warki");
+    grid.addColumn(Batch::getStyleId).setHeader("Styl warki");
+    grid.addColumn(Batch::getCreationDateTime).setHeader("Data wstawienia");
 
     add(grid);
   }
