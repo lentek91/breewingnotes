@@ -1,0 +1,15 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'idea'
+apply plugin: 'java'
+
+idea {
+    module {
+        inheritOutputDirs = false;
+        outputDir = file("$buildDir/clases/main")
+    }
+}
+
+dependencies {
+    implementation project(":batches:business")
+    implementation project(":batches:view")
+}

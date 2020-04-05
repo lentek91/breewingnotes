@@ -1,1 +1,6 @@
-rootProject.name = 'brewingnotes'
+rootProject.name = 'pl.lentek.brewingnotes'
+
+include ':application'
+
+include ':batches:business'
+include ':batches:view'
